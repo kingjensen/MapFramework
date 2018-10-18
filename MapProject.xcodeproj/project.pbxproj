@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DC853954D9AAA6B9174CB9A /* libPods-MapProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CF6FD18C5C92601B9015E3 /* libPods-MapProject.a */; };
+		5475621221783EC900EECC07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475621121783EC900EECC07 /* AppDelegate.m */; };
+		5475621521783EC900EECC07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475621421783EC900EECC07 /* ViewController.m */; };
+		5475621821783EC900EECC07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5475621621783EC900EECC07 /* Main.storyboard */; };
+		5475621A21783EC900EECC07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5475621921783EC900EECC07 /* Assets.xcassets */; };
+		5475621D21783EC900EECC07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5475621B21783EC900EECC07 /* LaunchScreen.storyboard */; };
+		5475622021783EC900EECC07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475621F21783EC900EECC07 /* main.m */; };
+		547562672178442200EECC07 /* Config.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 547562312178442200EECC07 /* Config.map.xml */; };
+		547562682178442200EECC07 /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 547562332178442200EECC07 /* Platform.m */; };
+		547562692178442200EECC07 /* PlatformXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 547562352178442200EECC07 /* PlatformXmlParser.m */; };
+		5475626A2178442200EECC07 /* BaiduMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 547562392178442200EECC07 /* BaiduMapFactory.m */; };
+		547562742178442200EECC07 /* BaiduLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 547562482178442200EECC07 /* BaiduLocation.m */; };
+		547562752178442200EECC07 /* BaiduLocationReGeocode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475624A2178442200EECC07 /* BaiduLocationReGeocode.m */; };
+		547562762178442200EECC07 /* BaiduLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475624C2178442200EECC07 /* BaiduLocationService.m */; };
+		547562772178442200EECC07 /* BaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475624F2178442200EECC07 /* BaiduMapView.m */; };
+		547562782178442200EECC07 /* GaodeMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 547562532178442200EECC07 /* GaodeMapFactory.m */; };
+		5475627E2178442200EECC07 /* GaodeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475625D2178442200EECC07 /* GaodeLocation.m */; };
+		5475627F2178442200EECC07 /* GaodeLocationReGeocode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475625F2178442200EECC07 /* GaodeLocationReGeocode.m */; };
+		547562802178442200EECC07 /* GaodeLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 547562612178442200EECC07 /* GaodeLocationService.m */; };
+		547562812178442200EECC07 /* GaodeMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 547562642178442200EECC07 /* GaodeMapView.m */; };
+		547562822178442200EECC07 /* MapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 547562662178442200EECC07 /* MapEngine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5475620D21783EC900EECC07 /* MapProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5475621021783EC900EECC07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5475621121783EC900EECC07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5475621321783EC900EECC07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5475621421783EC900EECC07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5475621721783EC900EECC07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5475621921783EC900EECC07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5475621C21783EC900EECC07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5475621E21783EC900EECC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5475621F21783EC900EECC07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		547562282178442200EECC07 /* IMapFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMapFactory.h; sourceTree = "<group>"; };
+		5475622A2178442200EECC07 /* ILocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILocation.h; sourceTree = "<group>"; };
+		5475622B2178442200EECC07 /* ILocationReGeocode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILocationReGeocode.h; sourceTree = "<group>"; };
+		5475622C2178442200EECC07 /* ILocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILocationService.h; sourceTree = "<group>"; };
+		5475622D2178442200EECC07 /* ILocationServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILocationServiceDelegate.h; sourceTree = "<group>"; };
+		5475622F2178442200EECC07 /* IMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMapView.h; sourceTree = "<group>"; };
+		547562312178442200EECC07 /* Config.map.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Config.map.xml; sourceTree = "<group>"; };
+		547562322178442200EECC07 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		547562332178442200EECC07 /* Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Platform.m; sourceTree = "<group>"; };
+		547562342178442200EECC07 /* PlatformXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformXmlParser.h; sourceTree = "<group>"; };
+		547562352178442200EECC07 /* PlatformXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformXmlParser.m; sourceTree = "<group>"; };
+		547562382178442200EECC07 /* BaiduMapFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapFactory.h; sourceTree = "<group>"; };
+		547562392178442200EECC07 /* BaiduMapFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapFactory.m; sourceTree = "<group>"; };
+		547562472178442200EECC07 /* BaiduLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocation.h; sourceTree = "<group>"; };
+		547562482178442200EECC07 /* BaiduLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocation.m; sourceTree = "<group>"; };
+		547562492178442200EECC07 /* BaiduLocationReGeocode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocationReGeocode.h; sourceTree = "<group>"; };
+		5475624A2178442200EECC07 /* BaiduLocationReGeocode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocationReGeocode.m; sourceTree = "<group>"; };
+		5475624B2178442200EECC07 /* BaiduLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocationService.h; sourceTree = "<group>"; };
+		5475624C2178442200EECC07 /* BaiduLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocationService.m; sourceTree = "<group>"; };
+		5475624E2178442200EECC07 /* BaiduMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapView.h; sourceTree = "<group>"; };
+		5475624F2178442200EECC07 /* BaiduMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapView.m; sourceTree = "<group>"; };
+		547562522178442200EECC07 /* GaodeMapFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeMapFactory.h; sourceTree = "<group>"; };
+		547562532178442200EECC07 /* GaodeMapFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaodeMapFactory.m; sourceTree = "<group>"; };
+		5475625C2178442200EECC07 /* GaodeLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeLocation.h; sourceTree = "<group>"; };
+		5475625D2178442200EECC07 /* GaodeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaodeLocation.m; sourceTree = "<group>"; };
+		5475625E2178442200EECC07 /* GaodeLocationReGeocode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeLocationReGeocode.h; sourceTree = "<group>"; };
+		5475625F2178442200EECC07 /* GaodeLocationReGeocode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaodeLocationReGeocode.m; sourceTree = "<group>"; };
+		547562602178442200EECC07 /* GaodeLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeLocationService.h; sourceTree = "<group>"; };
+		547562612178442200EECC07 /* GaodeLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaodeLocationService.m; sourceTree = "<group>"; };
+		547562632178442200EECC07 /* GaodeMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeMapView.h; sourceTree = "<group>"; };
+		547562642178442200EECC07 /* GaodeMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaodeMapView.m; sourceTree = "<group>"; };
+		547562652178442200EECC07 /* MapEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEngine.h; sourceTree = "<group>"; };
+		547562662178442200EECC07 /* MapEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapEngine.m; sourceTree = "<group>"; };
+		AC5BF5F5E7DDACF631A5B7A9 /* Pods-MapProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapProject/Pods-MapProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BA014A0C86B05795D8301325 /* Pods-MapProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapProject/Pods-MapProject.release.xcconfig"; sourceTree = "<group>"; };
+		E6CF6FD18C5C92601B9015E3 /* libPods-MapProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5475620A21783EC900EECC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC853954D9AAA6B9174CB9A /* libPods-MapProject.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		084805FA67EA9E89DFA7BD97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6CF6FD18C5C92601B9015E3 /* libPods-MapProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5475620421783EC900EECC07 = {
+			isa = PBXGroup;
+			children = (
+				5475620F21783EC900EECC07 /* MapProject */,
+				5475620E21783EC900EECC07 /* Products */,
+				7021E9E794D8BFD415000949 /* Pods */,
+				084805FA67EA9E89DFA7BD97 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5475620E21783EC900EECC07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5475620D21783EC900EECC07 /* MapProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5475620F21783EC900EECC07 /* MapProject */ = {
+			isa = PBXGroup;
+			children = (
+				5475621021783EC900EECC07 /* AppDelegate.h */,
+				5475621121783EC900EECC07 /* AppDelegate.m */,
+				5475621321783EC900EECC07 /* ViewController.h */,
+				5475621421783EC900EECC07 /* ViewController.m */,
+				547562262178442200EECC07 /* Framework */,
+				5475621621783EC900EECC07 /* Main.storyboard */,
+				5475621921783EC900EECC07 /* Assets.xcassets */,
+				5475621B21783EC900EECC07 /* LaunchScreen.storyboard */,
+				5475621E21783EC900EECC07 /* Info.plist */,
+				5475621F21783EC900EECC07 /* main.m */,
+			);
+			path = MapProject;
+			sourceTree = "<group>";
+		};
+		547562262178442200EECC07 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				547562272178442200EECC07 /* base */,
+				547562302178442200EECC07 /* config */,
+				547562362178442200EECC07 /* map */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		547562272178442200EECC07 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				547562282178442200EECC07 /* IMapFactory.h */,
+				547562292178442200EECC07 /* location */,
+				5475622E2178442200EECC07 /* views */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		547562292178442200EECC07 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				5475622A2178442200EECC07 /* ILocation.h */,
+				5475622B2178442200EECC07 /* ILocationReGeocode.h */,
+				5475622C2178442200EECC07 /* ILocationService.h */,
+				5475622D2178442200EECC07 /* ILocationServiceDelegate.h */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		5475622E2178442200EECC07 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5475622F2178442200EECC07 /* IMapView.h */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		547562302178442200EECC07 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				547562312178442200EECC07 /* Config.map.xml */,
+				547562322178442200EECC07 /* Platform.h */,
+				547562332178442200EECC07 /* Platform.m */,
+				547562342178442200EECC07 /* PlatformXmlParser.h */,
+				547562352178442200EECC07 /* PlatformXmlParser.m */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		547562362178442200EECC07 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				547562372178442200EECC07 /* baidu */,
+				547562502178442200EECC07 /* base */,
+				547562512178442200EECC07 /* gaode */,
+				547562652178442200EECC07 /* MapEngine.h */,
+				547562662178442200EECC07 /* MapEngine.m */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		547562372178442200EECC07 /* baidu */ = {
+			isa = PBXGroup;
+			children = (
+				547562382178442200EECC07 /* BaiduMapFactory.h */,
+				547562392178442200EECC07 /* BaiduMapFactory.m */,
+				5475623A2178442200EECC07 /* images */,
+				5475623C2178442200EECC07 /* libs */,
+				547562462178442200EECC07 /* location */,
+				5475624D2178442200EECC07 /* views */,
+			);
+			path = baidu;
+			sourceTree = "<group>";
+		};
+		5475623A2178442200EECC07 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		5475623C2178442200EECC07 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		547562462178442200EECC07 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				547562472178442200EECC07 /* BaiduLocation.h */,
+				547562482178442200EECC07 /* BaiduLocation.m */,
+				547562492178442200EECC07 /* BaiduLocationReGeocode.h */,
+				5475624A2178442200EECC07 /* BaiduLocationReGeocode.m */,
+				5475624B2178442200EECC07 /* BaiduLocationService.h */,
+				5475624C2178442200EECC07 /* BaiduLocationService.m */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		5475624D2178442200EECC07 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5475624E2178442200EECC07 /* BaiduMapView.h */,
+				5475624F2178442200EECC07 /* BaiduMapView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		547562502178442200EECC07 /* base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		547562512178442200EECC07 /* gaode */ = {
+			isa = PBXGroup;
+			children = (
+				547562522178442200EECC07 /* GaodeMapFactory.h */,
+				547562532178442200EECC07 /* GaodeMapFactory.m */,
+				547562542178442200EECC07 /* images */,
+				547562562178442200EECC07 /* libs */,
+				5475625B2178442200EECC07 /* location */,
+				547562622178442200EECC07 /* views */,
+			);
+			path = gaode;
+			sourceTree = "<group>";
+		};
+		547562542178442200EECC07 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		547562562178442200EECC07 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		5475625B2178442200EECC07 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				5475625C2178442200EECC07 /* GaodeLocation.h */,
+				5475625D2178442200EECC07 /* GaodeLocation.m */,
+				5475625E2178442200EECC07 /* GaodeLocationReGeocode.h */,
+				5475625F2178442200EECC07 /* GaodeLocationReGeocode.m */,
+				547562602178442200EECC07 /* GaodeLocationService.h */,
+				547562612178442200EECC07 /* GaodeLocationService.m */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		547562622178442200EECC07 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				547562632178442200EECC07 /* GaodeMapView.h */,
+				547562642178442200EECC07 /* GaodeMapView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		7021E9E794D8BFD415000949 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BF5F5E7DDACF631A5B7A9 /* Pods-MapProject.debug.xcconfig */,
+				BA014A0C86B05795D8301325 /* Pods-MapProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5475620C21783EC900EECC07 /* MapProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5475622321783EC900EECC07 /* Build configuration list for PBXNativeTarget "MapProject" */;
+			buildPhases = (
+				A4812DF232D13361C93A1C45 /* [CP] Check Pods Manifest.lock */,
+				5475620921783EC900EECC07 /* Sources */,
+				5475620A21783EC900EECC07 /* Frameworks */,
+				5475620B21783EC900EECC07 /* Resources */,
+				ABA990127993C064C54B6C6B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapProject;
+			productName = MapProject;
+			productReference = 5475620D21783EC900EECC07 /* MapProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5475620521783EC900EECC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ws;
+				TargetAttributes = {
+					5475620C21783EC900EECC07 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5475620821783EC900EECC07 /* Build configuration list for PBXProject "MapProject" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5475620421783EC900EECC07;
+			productRefGroup = 5475620E21783EC900EECC07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5475620C21783EC900EECC07 /* MapProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5475620B21783EC900EECC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5475621D21783EC900EECC07 /* LaunchScreen.storyboard in Resources */,
+				5475621A21783EC900EECC07 /* Assets.xcassets in Resources */,
+				5475621821783EC900EECC07 /* Main.storyboard in Resources */,
+				547562672178442200EECC07 /* Config.map.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4812DF232D13361C93A1C45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA990127993C064C54B6C6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MapProject/Pods-MapProject-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapProject/Pods-MapProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5475620921783EC900EECC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547562692178442200EECC07 /* PlatformXmlParser.m in Sources */,
+				547562772178442200EECC07 /* BaiduMapView.m in Sources */,
+				547562742178442200EECC07 /* BaiduLocation.m in Sources */,
+				5475621521783EC900EECC07 /* ViewController.m in Sources */,
+				5475627F2178442200EECC07 /* GaodeLocationReGeocode.m in Sources */,
+				5475622021783EC900EECC07 /* main.m in Sources */,
+				547562762178442200EECC07 /* BaiduLocationService.m in Sources */,
+				547562802178442200EECC07 /* GaodeLocationService.m in Sources */,
+				547562682178442200EECC07 /* Platform.m in Sources */,
+				547562812178442200EECC07 /* GaodeMapView.m in Sources */,
+				547562822178442200EECC07 /* MapEngine.m in Sources */,
+				5475627E2178442200EECC07 /* GaodeLocation.m in Sources */,
+				5475621221783EC900EECC07 /* AppDelegate.m in Sources */,
+				547562752178442200EECC07 /* BaiduLocationReGeocode.m in Sources */,
+				547562782178442200EECC07 /* GaodeMapFactory.m in Sources */,
+				5475626A2178442200EECC07 /* BaiduMapFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5475621621783EC900EECC07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5475621721783EC900EECC07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5475621B21783EC900EECC07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5475621C21783EC900EECC07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5475622121783EC900EECC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5475622221783EC900EECC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5475622421783EC900EECC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC5BF5F5E7DDACF631A5B7A9 /* Pods-MapProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 336W266E6R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MapProject/Framework/map/baidu/libs",
+					"$(PROJECT_DIR)/MapProject/Framework/map/gaode/libs",
+				);
+				INFOPLIST_FILE = MapProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MapProject/Framework/map/baidu/libs/thirdlibs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jensen.MapFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5475622521783EC900EECC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA014A0C86B05795D8301325 /* Pods-MapProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 336W266E6R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MapProject/Framework/map/baidu/libs",
+					"$(PROJECT_DIR)/MapProject/Framework/map/gaode/libs",
+				);
+				INFOPLIST_FILE = MapProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MapProject/Framework/map/baidu/libs/thirdlibs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jensen.MapFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5475620821783EC900EECC07 /* Build configuration list for PBXProject "MapProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5475622121783EC900EECC07 /* Debug */,
+				5475622221783EC900EECC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5475622321783EC900EECC07 /* Build configuration list for PBXNativeTarget "MapProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5475622421783EC900EECC07 /* Debug */,
+				5475622521783EC900EECC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5475620521783EC900EECC07 /* Project object */;
+}
